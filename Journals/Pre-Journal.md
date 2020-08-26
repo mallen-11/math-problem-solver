@@ -11,8 +11,5 @@ graduate,” but try to think a little deeper.
 What are parts that you struggle with?
 
     My favorite parts of math courses are the complex problem solving parts. I enjoy solving hard problems with math. I especially enjoyed differential equations because a lot of what was done in there had a relation to the real world. I also really enjoy algorithms in discrete math. Algorithms are that perfect mix of coding and math, and I enjoyed learning about that. Certain areas I have struggled with was visualizing 3D graphs in Calculus 3. Sometimes I would have difficulty seeing the full picture when a graph was in 3D. Another area I struggled with at times was creating a full useful proof in Inquiry and Proof. A lot of times I seemed to have the right bits and pieces but never the entire proof. I know that that takes time but is something I struggled with.
-<<<<<<< HEAD:Journals/Pre-Journal.txt
 
-Hello.
-=======
->>>>>>> 1613c6359881b768c0a45aaf6bfb8204c76b7870:Journals/Pre-Journal.md
+
