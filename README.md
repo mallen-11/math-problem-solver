@@ -5,4 +5,4 @@ that can then be graded and flagged by the computer as correct or incorrect.
 
 
 
-Thank you to my mentor, Paul Savala, and St. Edward's University for their continued support and guidance.
+Thank you to my mentor, Paul Savala, and St. Edward's University Math Department for their continued support and guidance.
