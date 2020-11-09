@@ -9,7 +9,9 @@ I have a few ideas for simplicity I want to run by you so I can try them this co
 was really interesting and I was able to learn a lot from it.
 
 Friday- Worked on Encoder-Decoder Model- 2 hours
+
 Saturday- More Model -2 hours
+
 Sunday- More Model and Reading- 3 hours
 
 
