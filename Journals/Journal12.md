@@ -1,4 +1,4 @@
-#Journal for Week 12 (due 11/16)
+# Journal for Week 12 (due 11/16)
 
 1. What did you do this week? Please be as specific as possible by filling out the time
 sheet provided below.
