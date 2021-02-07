@@ -57,3 +57,10 @@ def eval_image(image):
     result, attention_plot = evaluate(image)
     print ('Prediction Caption:', ' '.join(result))
     plot_attention(image, result, attention_plot)
+
+def check_results(images, labels, num_imgs=10):
+    for i in range(0, num_imgs):
+        result, attention_plot = evaluate(images[i])
+        print('Prediction Caption:', ' '.join(result))
+        print(f'Actual Caption: ', labels[i])
+        #plot_attention(images[i], result, attention_plot)
