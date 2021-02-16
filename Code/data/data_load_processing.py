@@ -18,8 +18,14 @@ def label_preprocessing(labels):
     label_array = [f'\t{la}\n' for la in label_array]
     return label_array
 
-def image_preprocessing(images):
-    images_for_split = images
+def image_preprocessing_for_inception(images):
     images = np.array(images)
     images = 255 - images
+    return images
+
+def image_preprocessing(images):
+    images = np.array(images)
+    images = 255 - images
+    images = tf.image.rgb_to_grayscale(images)
+    images = images.numpy()
     return images

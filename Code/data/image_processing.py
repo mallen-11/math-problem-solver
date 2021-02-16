@@ -10,11 +10,35 @@ def image_inception(X_train, X_test):
 
     return X_train, X_test
 
-def making_batch_features(X, y, batch_size=50, filename):
+def image_norm(X_train, X_test):
+    X_train = tf.image.resize_with_pad(X_train, 125, 125)
+    X_test= tf.image.resize_with_pad(X_test, 125, 125)
+
+    return X_train, X_test
+
+def making_batch_features_model(X, y, batch_size=50, filename):
     image_model = tf.keras.applications.InceptionV3(include_top=False,
                                                 weights='imagenet')
     new_input = image_model.input
     hidden_layer = image_model.layers[-1].output
+
+    image_features_extract_model = tf.keras.Model(new_input, hidden_layer)
+
+    image_dataset = tf.data.Dataset.from_tensor_slices((X, y)).batch(batch_size)
+    
+
+    for img, label in image_dataset:
+        batch_features = image_features_extract_model(img)
+        batch_features = tf.reshape(batch_features,
+                              (batch_features.shape[0], -1, batch_features.shape[3]))
+  
+        p = f'../{filename}/batch_features{c}'
+        np.save(p, batch_features)
+
+def making_batch_features_inception(X, y, batch_size=50, filename, path_to_model):
+    image_model = tf.keras.models.load_model(path_to_model)
+    new_input = image_model.input
+    hidden_layer = image_model.layers[-7].output
 
     image_features_extract_model = tf.keras.Model(new_input, hidden_layer)
 
